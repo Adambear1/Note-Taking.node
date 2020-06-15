@@ -142,3 +142,14 @@ $noteText.on("keyup", handleRenderSaveBtn);
 
 // Gets and renders the initial list of notes
 getAndRenderNotes();
+
+//
+
+$('.alert').hide()
+
+$('.about').click(() => {
+  $('.alert').show()
+})
+$('.close').click(() => {
+  $('.alert').hide()
+})

@@ -27,6 +27,26 @@
       .sub {
           color: rgba(255, 255, 255);
       }
+
+      .about {
+          margin-top: 35px;
+          text-decoration: underline;
+          text-decoration-color: orange;
+      }
+      .about:hover {
+          cursor: pointer;
+      }
+
+      .alert{
+          margin-top: 5px;
+          background-color: rgba(255, 255, 255, 0.76) !important;
+      }
+      .alert strong, .close{
+          color: orange !important;
+      }
+      .close {
+          border: 1px solid orange
+      }
   </style>
     </head>
 
@@ -40,6 +60,16 @@
                 <h1 class="display-4">Notepad</h1>
                 <h4 class="sub">Express Notepad</h4>
                 <a class="btn start-btn" href="/notes" role="button">Get Started</a>
+                <div class="about sub" id="about">About</div>
+                <div class="alert alert-warning alert-dismissible fade show"
+                    role="alert">
+                    <strong>Simple flat database that implements CRUD (Create,
+                        Read, Update, and Delete) of notes stored by user!</strong>
+                    <button type="button" class="close" data-dismiss="alert"
+                        aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
             </div>
         </div>
         <script
